@@ -1,0 +1,7 @@
+<input #myInput type="text">
+<button (click)="logMessage(myInput.value)">Log</button>
+<div>
+    <music-list></music-list>
+    <customer-list (sendToParent)="getMessage($event)" customerID="46" email="jakerills@gmail.com"></customer-list>
+    <p> {{receivedMessageFromCustomer}}</p>
+</div>

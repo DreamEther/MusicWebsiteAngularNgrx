@@ -1,0 +1,13 @@
+<div>
+    <p>This is string interpolation. Hi, my name is {{ firstName }} {{lastName}}</p> 
+</div>
+<br>
+
+<p>I am receiving these values from another component: {{email}} and {{id}} </p>
+
+<input type="text" [(ngModel)]="displayInput">
+<p>{{displayInput}}
+    
+</p>
+
+<button (click)="print()">Send to Parent</button>

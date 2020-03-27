@@ -1,0 +1,62 @@
+
+<form class="form-horizontal" (ngSubmit)= "onSubmit()">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Create Employee</h3>
+      </div>
+      <div class="panel-body">
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="artistName">Artist</label>
+          <div class="col-sm-2">
+            <input id="fullName" type="text" class="form-control" [(ngModel)]="artistName"> <!--since its a string we don't need the square brackets. If we do include the brackets the output value will be null when we try to log to the console.-->
+            </div>
+        </div>
+  
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="songName">Song</label>
+          <div class="col-sm-2">
+            <input id="email" type="text" class="form-control" [(ngModel)]="songName">
+          </div>
+        </div>
+      </div>
+      <div class="panel-footer">
+        <button class="btn btn-primary" type="submit">Save</button>
+      </div>
+    </div>
+  </form>
+
+  <div class="container-fluid">
+    <div class="m-md-4">
+      <div class="row">
+      <div class="col-xs-4">  
+        <div>
+          <p *ngIf="formSubmit" class=""> 
+        </div>
+  </div>
+
+  <div>
+    <p>Name: <input type="text" ng-model="firstName"></p>
+    <p>You wrote: {{firstName}}</p>
+    <p *ngFor> 
+  </div>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th><mark>this is </mark> the table head</th>
+      <th> this is table head #2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>this is data cell one</td> 
+      <td>this is data cell two</td> 
+    </tr>
+    <tr>
+      <td> data cell one row two</td>
+      <td> data cell two row two</td>
+    </tr>
+  </tbody>
+    
+
+  </table>   
